@@ -12,53 +12,53 @@ set_property IOSTANDARD LVDS_25 [get_ports sys_clk_clk_n]
 # LEDs (4)
 ###############################################################################
 
-set_property PACKAGE_PIN G3 [get_ports LED_A1]
-set_property IOSTANDARD LVCMOS33 [get_ports LED_A1]
-set_property PULLUP true [get_ports LED_A1]
-set_property DRIVE 8 [get_ports LED_A1]
+set_property PACKAGE_PIN G3 [get_ports {LED_A1[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED_A1[0]}]
+set_property PULLTYPE PULLUP [get_ports {LED_A1[0]}]
+set_property DRIVE 8 [get_ports {LED_A1[0]}]
 
-set_property PACKAGE_PIN H3 [get_ports LED_A2]
-set_property IOSTANDARD LVCMOS33 [get_ports LED_A2]
-set_property PULLUP true [get_ports LED_A2]
-set_property DRIVE 8 [get_ports LED_A2]
+set_property PACKAGE_PIN H3 [get_ports {LED_A2[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED_A2[0]}]
+set_property PULLTYPE PULLUP [get_ports {LED_A2[0]}]
+set_property DRIVE 8 [get_ports {LED_A2[0]}]
 
-set_property PACKAGE_PIN G4 [get_ports {LED_A3}]
-set_property IOSTANDARD LVCMOS33 [get_ports {LED_A3}]
-set_property PULLUP true [get_ports {LED_A3}]
-set_property DRIVE 8 [get_ports {LED_A3}]
+set_property PACKAGE_PIN G4 [get_ports {LED_A3[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED_A3[0]}]
+set_property PULLTYPE PULLUP [get_ports {LED_A3[0]}]
+set_property DRIVE 8 [get_ports {LED_A3[0]}]
 
-set_property PACKAGE_PIN H4 [get_ports {LED_A4}]
-set_property IOSTANDARD LVCMOS33 [get_ports {LED_A4}]
-set_property PULLUP true [get_ports {LED_A4}]
-set_property DRIVE 8 [get_ports {LED_A4}]
+set_property PACKAGE_PIN H4 [get_ports {LED_A4[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED_A4[0]}]
+set_property PULLTYPE PULLUP [get_ports {LED_A4[0]}]
+set_property DRIVE 8 [get_ports {LED_A4[0]}]
 
 ###############################################################################
 # M.2 LED signal
 ###############################################################################
-set_property PACKAGE_PIN M1 [get_ports {LED_M2}]
-set_property IOSTANDARD LVCMOS33 [get_ports {LED_M2}]
-set_property PULLUP true [get_ports {LED_M2}]
-set_property DRIVE 8 [get_ports {LED_M2}]
+set_property PACKAGE_PIN M1 [get_ports {LED_M2[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED_M2[0]}]
+set_property PULLTYPE PULLUP [get_ports {LED_M2[0]}]
+set_property DRIVE 8 [get_ports {LED_M2[0]}]
 
 
 ###############################################################################
 # SPI
 ###############################################################################
-set_property PACKAGE_PIN P22 [get_ports {SPI_0_io0_io}]
-set_property PACKAGE_PIN R22 [get_ports {SPI_0_io1_io}]
-set_property PACKAGE_PIN P21 [get_ports {SPI_0_io2_io}]
-set_property PACKAGE_PIN R21 [get_ports {SPI_0_io3_io}]
+set_property PACKAGE_PIN P22 [get_ports SPI_0_io0_io]
+set_property PACKAGE_PIN R22 [get_ports SPI_0_io1_io]
+set_property PACKAGE_PIN P21 [get_ports SPI_0_io2_io]
+set_property PACKAGE_PIN R21 [get_ports SPI_0_io3_io]
 
-set_property IOSTANDARD LVCMOS33 [get_ports {SPI_0_io0_io}]
-set_property IOSTANDARD LVCMOS33 [get_ports {SPI_0_io1_io}]
-set_property IOSTANDARD LVCMOS33 [get_ports {SPI_0_io2_io}]
-set_property IOSTANDARD LVCMOS33 [get_ports {SPI_0_io3_io}]
+set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_io0_io]
+set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_io1_io]
+set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_io2_io]
+set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_io3_io]
 
-set_property PACKAGE_PIN T19 [get_ports {real_spi_ss}]
-set_property IOSTANDARD LVCMOS33 [get_ports {real_spi_ss}]
+set_property PACKAGE_PIN T19 [get_ports {real_spi_ss[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {real_spi_ss[0]}]
 
-set_property PACKAGE_PIN U21 [get_ports {SPI_0_ss_t}]
-set_property IOSTANDARD LVCMOS33 [get_ports {SPI_0_ss_t}]
+set_property PACKAGE_PIN U21 [get_ports SPI_0_ss_t]
+set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_ss_t]
 
 
 ###############################################################################
@@ -94,3 +94,7 @@ set_property CONFIG_VOLTAGE 3.3 [current_design]
 set_property CFGBVS VCCO [current_design]
 
 
+
+set_property INTERNAL_VREF 0.75 [get_iobanks 15]
+set_property INTERNAL_VREF 0.75 [get_iobanks 16]
+set_property BITSTREAM.CONFIG.SPI_32BIT_ADDR YES [current_design]
