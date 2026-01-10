@@ -1,0 +1,26 @@
+vhdl xil_defaultlib  \
+"../../../bd/Top/ip/Top_axi_gpio_0_0/sim/Top_axi_gpio_0_0.vhd" \
+"../../../bd/Top/ip/Top_axi_gpio_1_0/sim/Top_axi_gpio_1_0.vhd" \
+"../../../bd/Top/ip/Top_axi_gpio_2_0/sim/Top_axi_gpio_2_0.vhd" \
+"../../../bd/Top/ip/Top_c_counter_binary_0_0/sim/Top_c_counter_binary_0_0.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/proc_common_v3_30_a/hdl/src/vhdl/Top_xadc_wiz_1_0_conv_funs_pkg.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/proc_common_v3_30_a/hdl/src/vhdl/Top_xadc_wiz_1_0_proc_common_pkg.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/proc_common_v3_30_a/hdl/src/vhdl/Top_xadc_wiz_1_0_ipif_pkg.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/proc_common_v3_30_a/hdl/src/vhdl/Top_xadc_wiz_1_0_family_support.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/proc_common_v3_30_a/hdl/src/vhdl/Top_xadc_wiz_1_0_family.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/proc_common_v3_30_a/hdl/src/vhdl/Top_xadc_wiz_1_0_soft_reset.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/proc_common_v3_30_a/hdl/src/vhdl/Top_xadc_wiz_1_0_pselect_f.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/Top_xadc_wiz_1_0_address_decoder.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/Top_xadc_wiz_1_0_slave_attachment.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/interrupt_control_v2_01_a/hdl/src/vhdl/Top_xadc_wiz_1_0_interrupt_control.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/Top_xadc_wiz_1_0_axi_lite_ipif.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/Top_xadc_wiz_1_0_drp_arbiter.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/Top_xadc_wiz_1_0_temperature_update.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/Top_xadc_wiz_1_0_xadc_core_drp.vhd" \
+"../../../bd/Top/ip/Top_xadc_wiz_1_0/Top_xadc_wiz_1_0_axi_xadc.vhd" \
+"../../../bd/Top/ip/Top_axi_quad_spi_0_0/sim/Top_axi_quad_spi_0_0.vhd" \
+"../../../bd/Top/ip/Top_util_ds_buf_0/util_ds_buf.vhd" \
+"../../../bd/Top/ip/Top_util_ds_buf_0/sim/Top_util_ds_buf_0.vhd" \
+
+# Do not sort compile order
+nosort

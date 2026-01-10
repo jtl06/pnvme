@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-2L" LaunchTime="1767738309">
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-2L" LaunchTime="1768019374">
+  <File Type="PA-TCL" Name="Top_wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="Top_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Top_wrapper.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="Top_wrapper_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="Top_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Top_wrapper_utilization_synth.pb"/>
-  <File Type="PA-TCL" Name="Top_wrapper.tcl"/>
-  <File Type="RDS-RDS" Name="Top_wrapper.vds"/>
   <File Type="RDS-DCP" Name="Top_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Top_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Top_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/HDL/dna_reader.v">
@@ -61,6 +64,17 @@
         <Attr Name="ScopedToCell" Val="Top_mig_7series_0_0"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/NVMeBar.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../Users/Jacen Li/AppData/Roaming/Xilinx/ip_repo/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="Top_wrapper"/>
@@ -97,24 +111,15 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="Top_CodeBlinker_0_3"/>
   <BlockFileSet Type="BlockSrcs" Name="Top_dna_reader_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Top_xadc_wiz_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Top_user_efuse_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Top_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Top_axi_quad_spi_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Top_util_vector_logic_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="Top_xdma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Top_c_counter_binary_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Top_axi_gpio_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Top_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Top_mig_7series_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Top_util_ds_buf_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Top_NVMeBar_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Top_axi_interconnect_0_imp_s00_mmu_0"/>
 </GenRun>

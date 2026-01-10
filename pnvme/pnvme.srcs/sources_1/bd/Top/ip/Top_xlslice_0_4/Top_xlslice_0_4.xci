@@ -5,7 +5,7 @@
     "cell_name": "xlslice_D0",
     "component_reference": "xilinx.com:ip:xlslice:1.0",
     "ip_revision": "5",
-    "gen_directory": "../../../../../../pnvme.gen/sources_1/bd/Top/ip/Top_xlslice_0_4",
+    "gen_directory": ".",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "Top_xlslice_0_4", "resolve_type": "user", "usage": "all" } ],
@@ -35,8 +35,9 @@
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
         "IPREVISION": [ { "value": "5" } ],
+        "LOCKEDBYUSER": [ { "value": "TRUE" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../pnvme.gen/sources_1/bd/Top/ip/Top_xlslice_0_4" } ],
+        "OUTPUTDIR": [ { "value": "." } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2025.1" } ],

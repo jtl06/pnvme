@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Tue Jan  6 01:58:37 2026
-# Process ID         : 2028
+# Start of session at: Fri Jan  9 20:31:43 2026
+# Process ID         : 24712
 # Current directory  : C:/fpga/pnvme/pnvme/pnvme.runs/synth_1
 # Command line       : vivado.exe -log Top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_wrapper.tcl
 # Log file           : C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/Top_wrapper.vds
@@ -19,11 +19,12 @@
 # Host memory        : 51179 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 59769 MB
-# Available Virtual  : 33107 MB
+# Available Virtual  : 31254 MB
 #-----------------------------------------------------------
 source Top_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/fpga/pnvme/nvmebar_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/fpga/pnvme/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
 INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/fpga/pnvme/pnvme/pnvme.srcs/sources_1/bd/Top/Top.bd which have equivalent inline hdl with improved performance and reduced diskspace.
 It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
@@ -47,16 +48,16 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tfgg484-2L
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8748
+INFO: [Synth 8-7075] Helper process launched with PID 26812
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1263.961 ; gain = 493.430
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1265.703 ; gain = 491.977
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top_wrapper' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/hdl/Top_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Top_wrapper' [C:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/hdl/Top_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434]
 INFO: [Synth 8-6157] synthesizing module 'Top' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:305]
-INFO: [Synth 8-6157] synthesizing module 'Top_CodeBlinker_0_3' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_CodeBlinker_0_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_CodeBlinker_0_3' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_CodeBlinker_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Top_CodeBlinker_0_3' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_CodeBlinker_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_CodeBlinker_0_3' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_CodeBlinker_0_3_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'GPIO_regs_imp_1Q7WBHV' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:13]
 INFO: [Synth 8-6157] synthesizing module 'Top_Model_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_Model_0/synth/Top_Model_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
@@ -66,134 +67,140 @@ INFO: [Synth 8-6157] synthesizing module 'Top_Version_0' [c:/fpga/pnvme/pnvme/pn
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized0' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'Top_Version_0' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_Version_0/synth/Top_Version_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'Top_axi_gpio_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_axi_gpio_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Top_axi_gpio_1_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_axi_gpio_1_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Top_axi_gpio_2_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_gpio_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_axi_gpio_2_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_gpio_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_1_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1519]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1IH0TUE' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2339]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1IH0TUE' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2339]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_75DH8Z' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2696]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_75DH8Z' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2696]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_19IPJKT' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2811]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_19IPJKT' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2811]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UBEF58' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3482]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UBEF58' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3482]
-INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0' is unconnected for instance 'xbar' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1984]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0' is unconnected for instance 'xbar' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1984]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0' has 40 connections declared, but only 38 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1984]
-INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_1_0' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1519]
-INFO: [Synth 8-6157] synthesizing module 'Top_c_counter_binary_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_c_counter_binary_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_c_counter_binary_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_c_counter_binary_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Top_dna_reader_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_dna_reader_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_dna_reader_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_dna_reader_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Top_axi_gpio_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_axi_gpio_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Top_axi_gpio_1_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_axi_gpio_1_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Top_axi_gpio_2_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_axi_gpio_2_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_1_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1746]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1IH0TUE' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2566]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1IH0TUE' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2566]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_75DH8Z' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2923]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_75DH8Z' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2923]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_19IPJKT' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3038]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_19IPJKT' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3038]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UBEF58' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3824]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UBEF58' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3824]
+INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0' is unconnected for instance 'xbar' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2211]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0' is unconnected for instance 'xbar' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2211]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0' has 40 connections declared, but only 38 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2211]
+INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_1_0' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1746]
+INFO: [Synth 8-6157] synthesizing module 'Top_c_counter_binary_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_c_counter_binary_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Top_dna_reader_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_dna_reader_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_dna_reader_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_dna_reader_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'ready' of module 'Top_dna_reader_0_0' is unconnected for instance 'dna_reader_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:294]
 WARNING: [Synth 8-7023] instance 'dna_reader_0' of module 'Top_dna_reader_0_0' has 4 connections declared, but only 3 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:294]
-INFO: [Synth 8-6157] synthesizing module 'Top_user_efuse_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_user_efuse_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_user_efuse_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_user_efuse_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Top_user_efuse_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_user_efuse_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_user_efuse_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_user_efuse_0_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'Top_xlslice_0_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlslice_0_0/synth/Top_xlslice_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_5_xlslice' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_5_xlslice' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
 INFO: [Synth 8-6155] done synthesizing module 'Top_xlslice_0_0' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlslice_0_0/synth/Top_xlslice_0_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'GPIO_regs_imp_1Q7WBHV' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:13]
-INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_0_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:999]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_JY9FDQ' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2454]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_JY9FDQ' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2454]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_16V7BMJ' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2581]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_16V7BMJ' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2581]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_B0MBTH' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2926]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_B0MBTH' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2926]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1UB271G' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3041]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1UB271G' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3041]
-INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0_stub.v:6]
-WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (9) of module 'Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1480]
-WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (9) of module 'Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1484]
-INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_0_0' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:999]
-INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_1_1' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2025]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_T8IUSN' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3168]
-INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_1_imp_auto_cc_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_interconnect_1_imp_auto_cc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_1_imp_auto_cc_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_interconnect_1_imp_auto_cc_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'Top_axi_interconnect_1_imp_auto_cc_0' is unconnected for instance 'auto_cc' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3399]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'Top_axi_interconnect_1_imp_auto_cc_0' is unconnected for instance 'auto_cc' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3399]
-WARNING: [Synth 8-7023] instance 'auto_cc' of module 'Top_axi_interconnect_1_imp_auto_cc_0' has 82 connections declared, but only 80 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3399]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_T8IUSN' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3168]
-INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_1_1' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2025]
-INFO: [Synth 8-6157] synthesizing module 'Top_axi_quad_spi_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_quad_spi_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_axi_quad_spi_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_axi_quad_spi_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'cfgclk' of module 'Top_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:788]
-WARNING: [Synth 8-7071] port 'cfgmclk' of module 'Top_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:788]
-WARNING: [Synth 8-7071] port 'eos' of module 'Top_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:788]
-WARNING: [Synth 8-7071] port 'preq' of module 'Top_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:788]
-WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'Top_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:788]
-WARNING: [Synth 8-7023] instance 'axi_quad_spi_0' of module 'Top_axi_quad_spi_0_0' has 40 connections declared, but only 35 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:788]
-INFO: [Synth 8-6157] synthesizing module 'Top_const_true_1' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_const_true_1/synth/Top_const_true_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Top_NVMeBar_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_NVMeBar_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_NVMeBar_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_NVMeBar_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_0_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1055]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_JY9FDQ' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2681]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_JY9FDQ' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2681]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_16V7BMJ' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2808]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_16V7BMJ' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2808]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_B0MBTH' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3153]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_B0MBTH' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3153]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1XEIH1S' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3268]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1XEIH1S' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3268]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1UB271G' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3383]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1UB271G' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3383]
+INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_0_imp_s00_mmu_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_interconnect_0_imp_s00_mmu_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_0_imp_s00_mmu_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_interconnect_0_imp_s00_mmu_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (12) of module 'Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1707]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (12) of module 'Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1711]
+INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_0_0' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:1055]
+INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_1_1' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2252]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_T8IUSN' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3510]
+INFO: [Synth 8-6157] synthesizing module 'Top_axi_interconnect_1_imp_auto_cc_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_interconnect_1_imp_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_1_imp_auto_cc_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_interconnect_1_imp_auto_cc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'Top_axi_interconnect_1_imp_auto_cc_0' is unconnected for instance 'auto_cc' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3741]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'Top_axi_interconnect_1_imp_auto_cc_0' is unconnected for instance 'auto_cc' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3741]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'Top_axi_interconnect_1_imp_auto_cc_0' has 82 connections declared, but only 80 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3741]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_T8IUSN' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:3510]
+INFO: [Synth 8-6155] done synthesizing module 'Top_axi_interconnect_1_1' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:2252]
+INFO: [Synth 8-6157] synthesizing module 'Top_axi_quad_spi_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_quad_spi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_axi_quad_spi_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_axi_quad_spi_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'cfgclk' of module 'Top_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:844]
+WARNING: [Synth 8-7071] port 'cfgmclk' of module 'Top_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:844]
+WARNING: [Synth 8-7071] port 'eos' of module 'Top_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:844]
+WARNING: [Synth 8-7071] port 'preq' of module 'Top_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:844]
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'Top_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:844]
+WARNING: [Synth 8-7023] instance 'axi_quad_spi_0' of module 'Top_axi_quad_spi_0_0' has 40 connections declared, but only 35 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:844]
+INFO: [Synth 8-6157] synthesizing module 'Top_const_true_1' [c:/fpga/pnvme/pnvme/pnvme.srcs/sources_1/bd/Top/ip/Top_const_true_1/synth/Top_const_true_1.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized1' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized1' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'Top_const_true_1' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_const_true_1/synth/Top_const_true_1.v:53]
-INFO: [Synth 8-6157] synthesizing module 'Top_mig_7series_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_mig_7series_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_mig_7series_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_mig_7series_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'ui_addn_clk_1' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:826]
-WARNING: [Synth 8-7071] port 'ui_addn_clk_2' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:826]
-WARNING: [Synth 8-7071] port 'ui_addn_clk_3' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:826]
-WARNING: [Synth 8-7071] port 'ui_addn_clk_4' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:826]
-WARNING: [Synth 8-7071] port 'mmcm_locked' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:826]
-WARNING: [Synth 8-7071] port 'app_sr_active' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:826]
-WARNING: [Synth 8-7071] port 'app_ref_ack' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:826]
-WARNING: [Synth 8-7071] port 'app_zq_ack' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:826]
-WARNING: [Synth 8-7071] port 'device_temp' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:826]
-WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'Top_mig_7series_0_0' has 69 connections declared, but only 60 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:826]
-INFO: [Synth 8-6157] synthesizing module 'Top_util_ds_buf_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_util_ds_buf_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_util_ds_buf_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_util_ds_buf_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'IBUF_DS_ODIV2' of module 'Top_util_ds_buf_0' is unconnected for instance 'util_ds_buf' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:887]
-WARNING: [Synth 8-7023] instance 'util_ds_buf' of module 'Top_util_ds_buf_0' has 4 connections declared, but only 3 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:887]
-INFO: [Synth 8-6157] synthesizing module 'Top_util_vector_logic_0_2' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_util_vector_logic_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_util_vector_logic_0_2' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_util_vector_logic_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Top_xadc_wiz_1_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_xadc_wiz_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_xadc_wiz_1_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_xadc_wiz_1_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:894]
-WARNING: [Synth 8-7071] port 'channel_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:894]
-WARNING: [Synth 8-7071] port 'busy_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:894]
-WARNING: [Synth 8-7071] port 'eoc_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:894]
-WARNING: [Synth 8-7071] port 'eos_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:894]
-WARNING: [Synth 8-7071] port 'ot_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:894]
-WARNING: [Synth 8-7071] port 'vccaux_alarm_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:894]
-WARNING: [Synth 8-7071] port 'vccint_alarm_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:894]
-WARNING: [Synth 8-7071] port 'user_temp_alarm_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:894]
-WARNING: [Synth 8-7071] port 'alarm_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:894]
-WARNING: [Synth 8-7023] instance 'xadc_wiz_0' of module 'Top_xadc_wiz_1_0' has 32 connections declared, but only 22 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:894]
-INFO: [Synth 8-6157] synthesizing module 'Top_xdma_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_xdma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Top_xdma_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-2028-Arcueid/realtime/Top_xdma_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'usr_irq_ack' of module 'Top_xdma_0_0' is unconnected for instance 'xdma_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:917]
-WARNING: [Synth 8-7071] port 'msi_enable' of module 'Top_xdma_0_0' is unconnected for instance 'xdma_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:917]
-WARNING: [Synth 8-7071] port 'msi_vector_width' of module 'Top_xdma_0_0' is unconnected for instance 'xdma_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:917]
-WARNING: [Synth 8-7023] instance 'xdma_0' of module 'Top_xdma_0_0' has 67 connections declared, but only 64 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:917]
-INFO: [Synth 8-6157] synthesizing module 'Top_xlconstant_0_1' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlconstant_0_1/synth/Top_xlconstant_0_1.v:53]
-INFO: [Synth 8-6155] done synthesizing module 'Top_xlconstant_0_1' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlconstant_0_1/synth/Top_xlconstant_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'Top_const_true_1' (0#1) [c:/fpga/pnvme/pnvme/pnvme.srcs/sources_1/bd/Top/ip/Top_const_true_1/synth/Top_const_true_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Top_mig_7series_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_mig_7series_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_mig_7series_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_mig_7series_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_1' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:882]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_2' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:882]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_3' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:882]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_4' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:882]
+WARNING: [Synth 8-7071] port 'mmcm_locked' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:882]
+WARNING: [Synth 8-7071] port 'app_sr_active' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:882]
+WARNING: [Synth 8-7071] port 'app_ref_ack' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:882]
+WARNING: [Synth 8-7071] port 'app_zq_ack' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:882]
+WARNING: [Synth 8-7071] port 'device_temp' of module 'Top_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:882]
+WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'Top_mig_7series_0_0' has 69 connections declared, but only 60 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:882]
+INFO: [Synth 8-6157] synthesizing module 'Top_util_ds_buf_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_util_ds_buf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_util_ds_buf_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_util_ds_buf_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'IBUF_DS_ODIV2' of module 'Top_util_ds_buf_0' is unconnected for instance 'util_ds_buf' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:943]
+WARNING: [Synth 8-7023] instance 'util_ds_buf' of module 'Top_util_ds_buf_0' has 4 connections declared, but only 3 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:943]
+INFO: [Synth 8-6157] synthesizing module 'Top_util_vector_logic_0_2' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_util_vector_logic_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_util_vector_logic_0_2' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_util_vector_logic_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Top_xadc_wiz_1_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_xadc_wiz_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_xadc_wiz_1_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_xadc_wiz_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:950]
+WARNING: [Synth 8-7071] port 'channel_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:950]
+WARNING: [Synth 8-7071] port 'busy_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:950]
+WARNING: [Synth 8-7071] port 'eoc_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:950]
+WARNING: [Synth 8-7071] port 'eos_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:950]
+WARNING: [Synth 8-7071] port 'ot_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:950]
+WARNING: [Synth 8-7071] port 'vccaux_alarm_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:950]
+WARNING: [Synth 8-7071] port 'vccint_alarm_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:950]
+WARNING: [Synth 8-7071] port 'user_temp_alarm_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:950]
+WARNING: [Synth 8-7071] port 'alarm_out' of module 'Top_xadc_wiz_1_0' is unconnected for instance 'xadc_wiz_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:950]
+WARNING: [Synth 8-7023] instance 'xadc_wiz_0' of module 'Top_xadc_wiz_1_0' has 32 connections declared, but only 22 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:950]
+INFO: [Synth 8-6157] synthesizing module 'Top_xdma_0_0' [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_xdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_xdma_0_0' (0#1) [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/.Xil/Vivado-24712-Arcueid/realtime/Top_xdma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'usr_irq_ack' of module 'Top_xdma_0_0' is unconnected for instance 'xdma_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:973]
+WARNING: [Synth 8-7071] port 'msi_enable' of module 'Top_xdma_0_0' is unconnected for instance 'xdma_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:973]
+WARNING: [Synth 8-7071] port 'msi_vector_width' of module 'Top_xdma_0_0' is unconnected for instance 'xdma_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:973]
+WARNING: [Synth 8-7023] instance 'xdma_0' of module 'Top_xdma_0_0' has 67 connections declared, but only 64 given [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:973]
+INFO: [Synth 8-6157] synthesizing module 'Top_xlconstant_0_1' [c:/fpga/pnvme/pnvme/pnvme.srcs/sources_1/bd/Top/ip/Top_xlconstant_0_1/synth/Top_xlconstant_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'Top_xlconstant_0_1' (0#1) [c:/fpga/pnvme/pnvme/pnvme.srcs/sources_1/bd/Top/ip/Top_xlconstant_0_1/synth/Top_xlconstant_0_1.v:53]
 INFO: [Synth 8-6157] synthesizing module 'Top_xlconstant_1_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlconstant_1_0/synth/Top_xlconstant_1_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized2' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized2' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'Top_xlconstant_1_0' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlconstant_1_0/synth/Top_xlconstant_1_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'Top_xlconstant_2_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlconstant_2_0/synth/Top_xlconstant_2_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'Top_xlconstant_2_0' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlconstant_2_0/synth/Top_xlconstant_2_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'Top_xlslice_0_4' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlslice_0_4/synth/Top_xlslice_0_4.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Top_xlslice_0_4' [c:/fpga/pnvme/pnvme/pnvme.srcs/sources_1/bd/Top/ip/Top_xlslice_0_4/synth/Top_xlslice_0_4.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_5_xlslice__parameterized0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_5_xlslice__parameterized0' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
-INFO: [Synth 8-6155] done synthesizing module 'Top_xlslice_0_4' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlslice_0_4/synth/Top_xlslice_0_4.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'Top_xlslice_0_4' (0#1) [c:/fpga/pnvme/pnvme/pnvme.srcs/sources_1/bd/Top/ip/Top_xlslice_0_4/synth/Top_xlslice_0_4.v:53]
 INFO: [Synth 8-6157] synthesizing module 'Top_xlslice_0_3' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlslice_0_3/synth/Top_xlslice_0_3.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_5_xlslice__parameterized1' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_5_xlslice__parameterized1' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
 INFO: [Synth 8-6155] done synthesizing module 'Top_xlslice_0_3' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlslice_0_3/synth/Top_xlslice_0_3.v:53]
-INFO: [Synth 8-6157] synthesizing module 'Top_xlslice_1_0' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlslice_1_0/synth/Top_xlslice_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Top_xlslice_1_0' [c:/fpga/pnvme/pnvme/pnvme.srcs/sources_1/bd/Top/ip/Top_xlslice_1_0/synth/Top_xlslice_1_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_5_xlslice__parameterized2' [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_5_xlslice__parameterized2' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
-INFO: [Synth 8-6155] done synthesizing module 'Top_xlslice_1_0' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xlslice_1_0/synth/Top_xlslice_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'Top_xlslice_1_0' (0#1) [c:/fpga/pnvme/pnvme/pnvme.srcs/sources_1/bd/Top/ip/Top_xlslice_1_0/synth/Top_xlslice_1_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'Top' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/synth/Top.v:305]
-INFO: [Synth 8-6155] done synthesizing module 'Top_wrapper' (0#1) [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/hdl/Top_wrapper.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Top_wrapper' (0#1) [C:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/hdl/Top_wrapper.v:13]
 WARNING: [Synth 8-7129] Port Din[31] in module xlslice_v1_0_5_xlslice__parameterized2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[30] in module xlslice_v1_0_5_xlslice__parameterized2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[29] in module xlslice_v1_0_5_xlslice__parameterized2 is either unconnected or has no load
@@ -291,23 +298,23 @@ WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1UB271G is either
 WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1UB271G is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_1UB271G is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_1UB271G is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_B0MBTH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_B0MBTH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_B0MBTH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_1XEIH1S is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_1XEIH1S is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m03_couplers_imp_1XEIH1S is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1384.625 ; gain = 614.094
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1388.664 ; gain = 614.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1384.625 ; gain = 614.094
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1388.664 ; gain = 614.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1384.625 ; gain = 614.094
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1388.664 ; gain = 614.938
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1384.625 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1388.664 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -334,18 +341,22 @@ Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xadc_wiz
 Finished Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xadc_wiz_1_0/Top_xadc_wiz_1_0/Top_xadc_wiz_1_0_in_context.xdc] for cell 'Top_i/xadc_wiz_0'
 Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0/Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0/Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0_in_context.xdc] for cell 'Top_i/axi_interconnect_0/xbar'
 Finished Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0/Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0/Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0_in_context.xdc] for cell 'Top_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_0_imp_s00_mmu_0/Top_axi_interconnect_0_imp_s00_mmu_0/Top_axi_interconnect_0_imp_s00_mmu_0_in_context.xdc] for cell 'Top_i/axi_interconnect_0/s00_mmu'
+Finished Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_0_imp_s00_mmu_0/Top_axi_interconnect_0_imp_s00_mmu_0/Top_axi_interconnect_0_imp_s00_mmu_0_in_context.xdc] for cell 'Top_i/axi_interconnect_0/s00_mmu'
 Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_1_imp_auto_cc_0/Top_axi_interconnect_1_imp_auto_cc_0/Top_axi_interconnect_1_imp_auto_cc_0_in_context.xdc] for cell 'Top_i/axi_interconnect_1/s00_couplers/auto_cc'
 Finished Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_1_imp_auto_cc_0/Top_axi_interconnect_1_imp_auto_cc_0/Top_axi_interconnect_1_imp_auto_cc_0_in_context.xdc] for cell 'Top_i/axi_interconnect_1/s00_couplers/auto_cc'
 Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_quad_spi_0_0/Top_axi_quad_spi_0_0/Top_axi_quad_spi_0_0_in_context.xdc] for cell 'Top_i/axi_quad_spi_0'
 Finished Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_quad_spi_0_0/Top_axi_quad_spi_0_0/Top_axi_quad_spi_0_0_in_context.xdc] for cell 'Top_i/axi_quad_spi_0'
 Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_util_ds_buf_0/Top_util_ds_buf_0/Top_util_ds_buf_0_in_context.xdc] for cell 'Top_i/util_ds_buf'
 Finished Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_util_ds_buf_0/Top_util_ds_buf_0/Top_util_ds_buf_0_in_context.xdc] for cell 'Top_i/util_ds_buf'
-Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_util_vector_logic_0_2/Top_util_vector_logic_0_2/Top_util_vector_logic_0_2_in_context.xdc] for cell 'Top_i/util_vector_logic_0'
-Finished Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_util_vector_logic_0_2/Top_util_vector_logic_0_2/Top_util_vector_logic_0_2_in_context.xdc] for cell 'Top_i/util_vector_logic_0'
+Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.srcs/sources_1/bd/Top/ip/Top_util_vector_logic_0_2/Top_util_vector_logic_0_2/Top_util_vector_logic_0_2_in_context.xdc] for cell 'Top_i/util_vector_logic_0'
+Finished Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.srcs/sources_1/bd/Top/ip/Top_util_vector_logic_0_2/Top_util_vector_logic_0_2/Top_util_vector_logic_0_2_in_context.xdc] for cell 'Top_i/util_vector_logic_0'
 Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xdma_0_0/Top_xdma_0_0/Top_xdma_0_0_in_context.xdc] for cell 'Top_i/xdma_0'
 Finished Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xdma_0_0/Top_xdma_0_0/Top_xdma_0_0_in_context.xdc] for cell 'Top_i/xdma_0'
 Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_CodeBlinker_0_3/Top_CodeBlinker_0_3/Top_CodeBlinker_0_3_in_context.xdc] for cell 'Top_i/CodeBlinker_3'
 Finished Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_CodeBlinker_0_3/Top_CodeBlinker_0_3/Top_CodeBlinker_0_3_in_context.xdc] for cell 'Top_i/CodeBlinker_3'
+Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_NVMeBar_0_0/Top_NVMeBar_0_0/Top_NVMeBar_0_0_in_context.xdc] for cell 'Top_i/NVMeBar_0'
+Finished Parsing XDC File [c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_NVMeBar_0_0/Top_NVMeBar_0_0/Top_NVMeBar_0_0_in_context.xdc] for cell 'Top_i/NVMeBar_0'
 Parsing XDC File [C:/fpga/pnvme/pnvme/pnvme.srcs/constrs_1/imports/constraints/early.xdc]
 Finished Parsing XDC File [C:/fpga/pnvme/pnvme/pnvme.srcs/constrs_1/imports/constraints/early.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/fpga/pnvme/pnvme/pnvme.srcs/constrs_1/imports/constraints/early.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_wrapper_propImpl.xdc].
@@ -358,34 +369,34 @@ Parsing XDC File [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1389.824 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1388.664 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1389.824 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1388.664 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Top_i/axi_quad_spi_0' at clock pin 'ext_spi_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'Top_i/GPIO_regs/axi_gpio_0' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'Top_i/GPIO_regs/axi_gpio_1' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'Top_i/GPIO_regs/axi_gpio_2' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1390.141 ; gain = 619.609
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1388.664 ; gain = 614.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1390.141 ; gain = 619.609
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1388.664 ; gain = 614.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1390.141 ; gain = 619.609
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1388.664 ; gain = 614.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1390.141 ; gain = 619.609
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1388.664 ; gain = 614.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -408,25 +419,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1403.164 ; gain = 632.633
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1398.305 ; gain = 624.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1575.879 ; gain = 805.348
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1569.273 ; gain = 795.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1577.852 ; gain = 807.320
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1571.340 ; gain = 797.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1588.469 ; gain = 817.938
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1582.141 ; gain = 808.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -444,37 +455,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1822.160 ; gain = 1051.629
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1815.504 ; gain = 1041.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1822.160 ; gain = 1051.629
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1815.504 ; gain = 1041.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1822.160 ; gain = 1051.629
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1815.504 ; gain = 1041.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1822.160 ; gain = 1051.629
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1815.504 ; gain = 1041.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1822.160 ; gain = 1051.629
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1815.504 ; gain = 1041.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1822.160 ; gain = 1051.629
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1815.504 ; gain = 1041.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -485,21 +496,23 @@ Report BlackBoxes:
 |      |BlackBox name                                  |Instances |
 +------+-----------------------------------------------+----------+
 |1     |Top_CodeBlinker_0_3                            |         1|
-|2     |Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0 |         1|
-|3     |Top_axi_interconnect_1_imp_auto_cc_0           |         1|
-|4     |Top_axi_quad_spi_0_0                           |         1|
-|5     |Top_mig_7series_0_0                            |         1|
-|6     |Top_util_ds_buf_0                              |         1|
-|7     |Top_util_vector_logic_0_2                      |         1|
-|8     |Top_xadc_wiz_1_0                               |         1|
-|9     |Top_xdma_0_0                                   |         1|
-|10    |Top_axi_gpio_0_0                               |         1|
-|11    |Top_axi_gpio_1_0                               |         1|
-|12    |Top_axi_gpio_2_0                               |         1|
-|13    |Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0 |         1|
-|14    |Top_c_counter_binary_0_0                       |         1|
-|15    |Top_dna_reader_0_0                             |         1|
-|16    |Top_user_efuse_0_0                             |         1|
+|2     |Top_NVMeBar_0_0                                |         1|
+|3     |Top_axi_interconnect_0_imp_s00_mmu_0           |         1|
+|4     |Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0 |         1|
+|5     |Top_axi_interconnect_1_imp_auto_cc_0           |         1|
+|6     |Top_axi_quad_spi_0_0                           |         1|
+|7     |Top_mig_7series_0_0                            |         1|
+|8     |Top_util_ds_buf_0                              |         1|
+|9     |Top_util_vector_logic_0_2                      |         1|
+|10    |Top_xadc_wiz_1_0                               |         1|
+|11    |Top_xdma_0_0                                   |         1|
+|12    |Top_axi_gpio_0_0                               |         1|
+|13    |Top_axi_gpio_1_0                               |         1|
+|14    |Top_axi_gpio_2_0                               |         1|
+|15    |Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0 |         1|
+|16    |Top_c_counter_binary_0_0                       |         1|
+|17    |Top_dna_reader_0_0                             |         1|
+|18    |Top_user_efuse_0_0                             |         1|
 +------+-----------------------------------------------+----------+
 
 Report Cell Usage: 
@@ -507,48 +520,50 @@ Report Cell Usage:
 |      |Cell                                         |Count |
 +------+---------------------------------------------+------+
 |1     |Top_CodeBlinker_0                            |     1|
-|2     |Top_axi_gpio_0                               |     1|
-|3     |Top_axi_gpio_1                               |     1|
-|4     |Top_axi_gpio_2                               |     1|
-|5     |Top_axi_interconnect_0_upgraded_ipi_imp_xbar |     1|
-|6     |Top_axi_interconnect_1_imp_auto_cc           |     1|
-|7     |Top_axi_interconnect_1_upgraded_ipi_imp_xbar |     1|
-|8     |Top_axi_quad_spi_0                           |     1|
-|9     |Top_c_counter_binary_0                       |     1|
-|10    |Top_dna_reader_0                             |     1|
-|11    |Top_mig_7series_0                            |     1|
-|12    |Top_user_efuse_0                             |     1|
-|13    |Top_util_ds_buf                              |     1|
-|14    |Top_util_vector_logic_0                      |     1|
-|15    |Top_xadc_wiz_1                               |     1|
-|16    |Top_xdma_0                                   |     1|
-|17    |IBUF                                         |     9|
-|18    |IOBUF                                        |     4|
-|19    |OBUF                                         |    16|
+|2     |Top_NVMeBar_0                                |     1|
+|3     |Top_axi_gpio_0                               |     1|
+|4     |Top_axi_gpio_1                               |     1|
+|5     |Top_axi_gpio_2                               |     1|
+|6     |Top_axi_interconnect_0_imp_s00_mmu           |     1|
+|7     |Top_axi_interconnect_0_upgraded_ipi_imp_xbar |     1|
+|8     |Top_axi_interconnect_1_imp_auto_cc           |     1|
+|9     |Top_axi_interconnect_1_upgraded_ipi_imp_xbar |     1|
+|10    |Top_axi_quad_spi_0                           |     1|
+|11    |Top_c_counter_binary_0                       |     1|
+|12    |Top_dna_reader_0                             |     1|
+|13    |Top_mig_7series_0                            |     1|
+|14    |Top_user_efuse_0                             |     1|
+|15    |Top_util_ds_buf                              |     1|
+|16    |Top_util_vector_logic_0                      |     1|
+|17    |Top_xadc_wiz_1                               |     1|
+|18    |Top_xdma_0                                   |     1|
+|19    |IBUF                                         |     9|
+|20    |IOBUF                                        |     4|
+|21    |OBUF                                         |    16|
 +------+---------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1822.160 ; gain = 1051.629
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1815.504 ; gain = 1041.777
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 111 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1822.160 ; gain = 1046.113
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1822.160 ; gain = 1051.629
+Synthesis finished with 0 errors, 0 critical warnings and 113 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1815.504 ; gain = 1041.777
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1815.504 ; gain = 1041.777
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1822.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1815.504 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1832.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1828.348 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
-Synth Design complete | Checksum: dab7d248
+Synth Design complete | Checksum: 5fdd372b
 INFO: [Common 17-83] Releasing license: Synthesis
-123 Infos, 148 Warnings, 0 Critical Warnings and 0 Errors encountered.
+130 Infos, 148 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1832.672 ; gain = 1267.363
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1832.672 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1828.348 ; gain = 1259.879
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1828.348 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/fpga/pnvme/pnvme/pnvme.runs/synth_1/Top_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file Top_wrapper_utilization_synth.rpt -pb Top_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jan  6 01:59:09 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  9 20:32:16 2026...

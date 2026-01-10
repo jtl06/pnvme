@@ -2,10 +2,10 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-// Date        : Tue Jan  6 00:20:21 2026
+// Date        : Tue Jan  6 00:20:20 2026
 // Host        : Arcueid running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_util_ds_buf_0/Top_util_ds_buf_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top Top_util_ds_buf_0 -prefix
+//               Top_util_ds_buf_0_ Top_util_ds_buf_0_stub.v
 // Design      : Top_util_ds_buf_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tfgg484-2L

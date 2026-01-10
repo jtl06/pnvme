@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="Top_dna_reader_0_0_synth_1" LaunchPart="xc7a100tfgg484-2L" LaunchTime="1767687561">
+<GenRun Id="Top_dna_reader_0_0_synth_1" LaunchPart="xc7a100tfgg484-2L" LaunchTime="1768019184">
+  <File Type="PA-TCL" Name="Top_dna_reader_0_0.tcl"/>
   <File Type="REPORTS-TCL" Name="Top_dna_reader_0_0_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Top_dna_reader_0_0.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="Top_dna_reader_0_0_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="Top_dna_reader_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Top_dna_reader_0_0_utilization_synth.pb"/>
-  <File Type="PA-TCL" Name="Top_dna_reader_0_0.tcl"/>
-  <File Type="RDS-RDS" Name="Top_dna_reader_0_0.vds"/>
   <File Type="RDS-DCP" Name="Top_dna_reader_0_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Top_dna_reader_0_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Top_dna_reader_0_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Top_dna_reader_0_0" RelGenDir="$PGENDIR/Top_dna_reader_0_0">
     <File Path="$PSRCDIR/sources_1/bd/Top/ip/Top_dna_reader_0_0/Top_dna_reader_0_0.xci">
       <FileInfo>

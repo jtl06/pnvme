@@ -2,10 +2,10 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-// Date        : Tue Jan  6 01:58:31 2026
+// Date        : Tue Jan  6 01:58:25 2026
 // Host        : Arcueid running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xdma_0_0/Top_xdma_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top Top_xdma_0_0 -prefix
+//               Top_xdma_0_0_ Top_xdma_0_0_stub.v
 // Design      : Top_xdma_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tfgg484-2L

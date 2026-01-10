@@ -56,9 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
 set_param general.usePosixSpawnForFork 1
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config  -id {DRC NSTD-1}  -string {{ERROR: [DRC NSTD-1] Unspecified I/O Standard: 6 out of 6 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: code[2:0], clk, led, and ok.}}  -suppress 
 set_msg_config  -id {DRC UCIO-1}  -string {{ERROR: [DRC UCIO-1] Unconstrained Logical Port: 6 out of 6 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: code[2:0], clk, led, and ok.}}  -suppress 
 OPTRACE "Creating in-memory project" START { }
@@ -73,11 +71,16 @@ set_property parent.project_path C:/fpga/pnvme/pnvme/pnvme.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths {
+  c:/fpga/pnvme/nvmebar_ip
+  c:/fpga/pnvme/ip_repo
+} [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/fpga/pnvme/pnvme/pnvme.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/hdl/Top_wrapper.v
+read_verilog -library xil_defaultlib C:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/hdl/Top_wrapper.v
 add_files C:/fpga/pnvme/pnvme/pnvme.srcs/sources_1/bd/Top/Top.bd
 set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_gpio_0_0/Top_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_gpio_0_0/Top_axi_gpio_0_0_ooc.xdc]
@@ -108,6 +111,7 @@ set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pn
 set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xdma_0_0/Top_xdma_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xdma_0_0/source/Top_xdma_0_0_pcie3_7vx_ip.xdc]
 set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xdma_0_0/synth/Top_xdma_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_0_imp_s00_mmu_0/Top_axi_interconnect_0_imp_s00_mmu_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_1_imp_auto_cc_0/Top_axi_interconnect_1_imp_auto_cc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_1_imp_auto_cc_0/Top_axi_interconnect_1_imp_auto_cc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_1_imp_auto_cc_0/Top_axi_interconnect_1_imp_auto_cc_0_ooc.xdc]

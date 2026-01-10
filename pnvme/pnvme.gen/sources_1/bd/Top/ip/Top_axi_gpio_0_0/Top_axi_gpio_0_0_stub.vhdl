@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
 -- Date        : Tue Jan  6 00:20:22 2026
 -- Host        : Arcueid running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_gpio_0_0/Top_axi_gpio_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top Top_axi_gpio_0_0 -prefix
+--               Top_axi_gpio_0_0_ Top_axi_gpio_0_0_stub.vhdl
 -- Design      : Top_axi_gpio_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tfgg484-2L
