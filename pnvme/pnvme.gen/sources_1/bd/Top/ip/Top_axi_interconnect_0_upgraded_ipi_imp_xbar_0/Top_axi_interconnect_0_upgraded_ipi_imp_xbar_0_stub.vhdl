@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
--- Date        : Fri Jan  9 20:27:18 2026
+-- Date        : Thu Jan 29 02:26:03 2026
 -- Host        : Arcueid running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0 -prefix
---               Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0_ Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0/Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0_stub.vhdl
 -- Design      : Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tfgg484-2L
@@ -60,7 +60,7 @@ entity Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0 : entity is "Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0,axi_crossbar_v2_1_37_axi_crossbar,{}";
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0 : entity is "Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0,axi_crossbar_v2_1_37_axi_crossbar,{x_ipProduct=Vivado 2025.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_crossbar,x_ipVersion=2.1,x_ipCoreRevision=37,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=artix7,C_NUM_SLAVE_SLOTS=1,C_NUM_MASTER_SLOTS=4,C_AXI_ID_WIDTH=1,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_WIDTH=32,C_AXI_PROTOCOL=2,C_NUM_ADDR_RANGES=2,C_M_AXI_BASE_ADDR=0xffffffffffffffffffffffffffffffffffffffffffffffff0000000000003000ffffffffffffffff000000000001000000000000000020000000000000000000,C_M_AXI_ADDR_WIDTH=0x0000000000000000000000000000000c000000000000000c0000000c0000000d,C_S_AXI_BASE_ID=0x00000000,C_S_AXI_THREAD_ID_WIDTH=0x00000000,C_AXI_SUPPORTS_USER_SIGNALS=0,C_AXI_AWUSER_WIDTH=1,C_AXI_ARUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_M_AXI_WRITE_CONNECTIVITY=0x00000001000000010000000100000001,C_M_AXI_READ_CONNECTIVITY=0x00000001000000010000000100000001,C_R_REGISTER=1,C_S_AXI_SINGLE_THREAD=0x00000001,C_S_AXI_WRITE_ACCEPTANCE=0x00000001,C_S_AXI_READ_ACCEPTANCE=0x00000001,C_M_AXI_WRITE_ISSUING=0x00000001000000010000000100000001,C_M_AXI_READ_ISSUING=0x00000001000000010000000100000001,C_S_AXI_ARB_PRIORITY=0x00000000,C_M_AXI_SECURE=0x00000000000000000000000000000000,C_CONNECTIVITY_MODE=0}";
+  attribute CORE_GENERATION_INFO of Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0 : entity is "Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0,axi_crossbar_v2_1_37_axi_crossbar,{x_ipProduct=Vivado 2025.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_crossbar,x_ipVersion=2.1,x_ipCoreRevision=37,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=artix7,C_NUM_SLAVE_SLOTS=1,C_NUM_MASTER_SLOTS=4,C_AXI_ID_WIDTH=1,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_WIDTH=32,C_AXI_PROTOCOL=2,C_NUM_ADDR_RANGES=2,C_M_AXI_BASE_ADDR=0xffffffffffffffff0000000000000000ffffffffffffffff000000000001c000ffffffffffffffff0000000000010000000000000001a0000000000000018000,C_M_AXI_ADDR_WIDTH=0x0000000000000010000000000000000c000000000000000c0000000c0000000d,C_S_AXI_BASE_ID=0x00000000,C_S_AXI_THREAD_ID_WIDTH=0x00000000,C_AXI_SUPPORTS_USER_SIGNALS=0,C_AXI_AWUSER_WIDTH=1,C_AXI_ARUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_M_AXI_WRITE_CONNECTIVITY=0x00000001000000010000000100000001,C_M_AXI_READ_CONNECTIVITY=0x00000001000000010000000100000001,C_R_REGISTER=1,C_S_AXI_SINGLE_THREAD=0x00000001,C_S_AXI_WRITE_ACCEPTANCE=0x00000001,C_S_AXI_READ_ACCEPTANCE=0x00000001,C_M_AXI_WRITE_ISSUING=0x00000001000000010000000100000001,C_M_AXI_READ_ISSUING=0x00000001000000010000000100000001,C_S_AXI_ARB_PRIORITY=0x00000000,C_M_AXI_SECURE=0x00000000000000000000000000000000,C_CONNECTIVITY_MODE=0}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0 : entity is "yes";
 end Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0;

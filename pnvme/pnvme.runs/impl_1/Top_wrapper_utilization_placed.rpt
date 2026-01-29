@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Fri Jan  9 20:41:30 2026
+| Date         : Thu Jan 29 02:30:09 2026
 | Host         : Arcueid running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_wrapper_utilization_placed.rpt -pb Top_wrapper_utilization_placed.pb
 | Design       : Top_wrapper
@@ -32,13 +32,13 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| Slice LUTs                 | 22140 |     0 |          0 |     63400 | 34.92 |
-|   LUT as Logic             | 19596 |     0 |          0 |     63400 | 30.91 |
+| Slice LUTs                 | 22248 |     0 |          0 |     63400 | 35.09 |
+|   LUT as Logic             | 19704 |     0 |          0 |     63400 | 31.08 |
 |   LUT as Memory            |  2544 |     0 |          0 |     19000 | 13.39 |
 |     LUT as Distributed RAM |  2373 |     0 |            |           |       |
 |     LUT as Shift Register  |   171 |     0 |            |           |       |
-| Slice Registers            | 25670 |     0 |          0 |    126800 | 20.24 |
-|   Register as Flip Flop    | 25670 |     0 |          0 |    126800 | 20.24 |
+| Slice Registers            | 25897 |     0 |          0 |    126800 | 20.42 |
+|   Register as Flip Flop    | 25897 |     0 |          0 |    126800 | 20.42 |
 |   Register as Latch        |     0 |     0 |          0 |    126800 |  0.00 |
 | F7 Muxes                   |   238 |     0 |          0 |     31700 |  0.75 |
 | F8 Muxes                   |    17 |     0 |          0 |     15850 |  0.11 |
@@ -60,8 +60,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 212   |          Yes |           - |          Set |
 | 300   |          Yes |           - |        Reset |
-| 541   |          Yes |         Set |            - |
-| 24621 |          Yes |       Reset |            - |
+| 539   |          Yes |         Set |            - |
+| 24850 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -71,13 +71,13 @@ Table of Contents
 +--------------------------------------------+-------+-------+------------+-----------+-------+
 |                  Site Type                 |  Used | Fixed | Prohibited | Available | Util% |
 +--------------------------------------------+-------+-------+------------+-----------+-------+
-| Slice                                      |  8672 |     0 |          0 |     15850 | 54.71 |
-|   SLICEL                                   |  5984 |     0 |            |           |       |
-|   SLICEM                                   |  2688 |     0 |            |           |       |
-| LUT as Logic                               | 19596 |     0 |          0 |     63400 | 30.91 |
-|   using O5 output only                     |     6 |       |            |           |       |
-|   using O6 output only                     | 14372 |       |            |           |       |
-|   using O5 and O6                          |  5218 |       |            |           |       |
+| Slice                                      |  8673 |     0 |          0 |     15850 | 54.72 |
+|   SLICEL                                   |  5990 |     0 |            |           |       |
+|   SLICEM                                   |  2683 |     0 |            |           |       |
+| LUT as Logic                               | 19704 |     0 |          0 |     63400 | 31.08 |
+|   using O5 output only                     |     9 |       |            |           |       |
+|   using O6 output only                     | 14518 |       |            |           |       |
+|   using O5 and O6                          |  5177 |       |            |           |       |
 | LUT as Memory                              |  2544 |     0 |          0 |     19000 | 13.39 |
 |   LUT as Distributed RAM                   |  2373 |     0 |            |           |       |
 |     using O5 output only                   |     0 |       |            |           |       |
@@ -87,12 +87,12 @@ Table of Contents
 |     using O5 output only                   |    21 |       |            |           |       |
 |     using O6 output only                   |   148 |       |            |           |       |
 |     using O5 and O6                        |     2 |       |            |           |       |
-| Slice Registers                            | 25670 |     0 |          0 |    126800 | 20.24 |
-|   Register driven from within the Slice    | 14252 |       |            |           |       |
-|   Register driven from outside the Slice   | 11418 |       |            |           |       |
-|     LUT in front of the register is unused |  8179 |       |            |           |       |
-|     LUT in front of the register is used   |  3239 |       |            |           |       |
-| Unique Control Sets                        |   790 |       |          0 |     15850 |  4.98 |
+| Slice Registers                            | 25897 |     0 |          0 |    126800 | 20.42 |
+|   Register driven from within the Slice    | 14280 |       |            |           |       |
+|   Register driven from outside the Slice   | 11617 |       |            |           |       |
+|     LUT in front of the register is unused |  8342 |       |            |           |       |
+|     LUT in front of the register is used   |  3275 |       |            |           |       |
+| Unique Control Sets                        |   822 |       |          0 |     15850 |  5.19 |
 +--------------------------------------------+-------+-------+------------+-----------+-------+
 * * Note: Available Control Sets calculated as Slice * 1, Review the Control Sets Report for more information regarding control sets.
 
@@ -198,17 +198,17 @@ Table of Contents
 +--------------------------+-------+----------------------+
 |         Ref Name         |  Used |  Functional Category |
 +--------------------------+-------+----------------------+
-| FDRE                     | 24621 |         Flop & Latch |
-| LUT6                     |  7454 |                  LUT |
-| LUT3                     |  5231 |                  LUT |
-| LUT5                     |  5035 |                  LUT |
-| LUT4                     |  3652 |                  LUT |
+| FDRE                     | 24850 |         Flop & Latch |
+| LUT6                     |  7555 |                  LUT |
+| LUT3                     |  5180 |                  LUT |
+| LUT5                     |  5042 |                  LUT |
+| LUT4                     |  3654 |                  LUT |
 | RAMD32                   |  3552 |   Distributed Memory |
-| LUT2                     |  2728 |                  LUT |
+| LUT2                     |  2740 |                  LUT |
 | RAMS32                   |  1150 |   Distributed Memory |
-| LUT1                     |   714 |                  LUT |
-| CARRY4                   |   679 |           CarryLogic |
-| FDSE                     |   541 |         Flop & Latch |
+| LUT1                     |   710 |                  LUT |
+| CARRY4                   |   683 |           CarryLogic |
+| FDSE                     |   539 |         Flop & Latch |
 | FDCE                     |   300 |         Flop & Latch |
 | MUXF7                    |   238 |                MuxFx |
 | FDPE                     |   212 |         Flop & Latch |
@@ -280,7 +280,6 @@ Table of Contents
 | Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0 |    1 |
 | Top_axi_interconnect_1_imp_auto_cc_0           |    1 |
 | Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0 |    1 |
-| Top_axi_interconnect_0_imp_s00_mmu_0           |    1 |
 | Top_axi_gpio_2_0                               |    1 |
 | Top_axi_gpio_1_0                               |    1 |
 | Top_axi_gpio_0_0                               |    1 |

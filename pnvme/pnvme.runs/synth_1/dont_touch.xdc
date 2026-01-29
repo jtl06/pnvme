@@ -95,9 +95,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Top_xlconst
 # IP: bd/Top/ip/Top_NVMeBar_0_0/Top_NVMeBar_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Top_NVMeBar_0_0 || ORIG_REF_NAME==Top_NVMeBar_0_0} -quiet] -quiet
 
-# IP: bd/Top/ip/Top_axi_interconnect_0_imp_s00_mmu_0/Top_axi_interconnect_0_imp_s00_mmu_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Top_axi_interconnect_0_imp_s00_mmu_0 || ORIG_REF_NAME==Top_axi_interconnect_0_imp_s00_mmu_0} -quiet] -quiet
-
 # IP: bd/Top/ip/Top_axi_interconnect_1_imp_auto_cc_0/Top_axi_interconnect_1_imp_auto_cc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Top_axi_interconnect_1_imp_auto_cc_0 || ORIG_REF_NAME==Top_axi_interconnect_1_imp_auto_cc_0} -quiet] -quiet
 

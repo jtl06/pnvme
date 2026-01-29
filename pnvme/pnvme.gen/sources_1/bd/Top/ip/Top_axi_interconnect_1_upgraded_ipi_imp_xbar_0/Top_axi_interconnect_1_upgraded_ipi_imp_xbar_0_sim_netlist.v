@@ -2,10 +2,10 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-// Date        : Tue Jan  6 00:20:29 2026
+// Date        : Thu Jan 29 02:25:58 2026
 // Host        : Arcueid running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0 -prefix
-//               Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_ Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0/Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_sim_netlist.v
 // Design      : Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -178,7 +178,7 @@ module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0
   (* C_DEBUG = "1" *) 
   (* C_FAMILY = "artix7" *) 
   (* C_M_AXI_ADDR_WIDTH = "96'b000000000000000000000000000011000000000000000000000000000000110000000000000000000000000000001100" *) 
-  (* C_M_AXI_BASE_ADDR = "192'b000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* C_M_AXI_BASE_ADDR = "192'b000000000000000000000000000000000000000000000001101000000000000000000000000000000000000000000000000000000000000110010000000000000000000000000000000000000000000000000000000000011000000000000000" *) 
   (* C_M_AXI_READ_CONNECTIVITY = "96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001" *) 
   (* C_M_AXI_READ_ISSUING = "96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001" *) 
   (* C_M_AXI_SECURE = "96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
@@ -306,6 +306,7 @@ module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_37_addr_arbiter_sasd" *) 
 module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_37_addr_arbiter_sasd
    (m_valid_i,
     SR,
@@ -1203,14 +1204,14 @@ module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_37_addr_
         .I5(Q[23]),
         .O(\m_atarget_hot[3]_i_3_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    .INIT(64'hFFFFFEFFFFFFFFFF)) 
     \m_atarget_hot[3]_i_4 
        (.I0(Q[18]),
         .I1(Q[17]),
-        .I2(Q[15]),
-        .I3(Q[19]),
+        .I2(Q[19]),
+        .I3(Q[16]),
         .I4(Q[14]),
-        .I5(Q[16]),
+        .I5(Q[15]),
         .O(\m_atarget_hot[3]_i_4_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT4 #(
@@ -1473,19 +1474,19 @@ endmodule
 (* C_AXI_BUSER_WIDTH = "1" *) (* C_AXI_DATA_WIDTH = "32" *) (* C_AXI_ID_WIDTH = "1" *) 
 (* C_AXI_PROTOCOL = "2" *) (* C_AXI_RUSER_WIDTH = "1" *) (* C_AXI_SUPPORTS_USER_SIGNALS = "0" *) 
 (* C_AXI_WUSER_WIDTH = "1" *) (* C_CONNECTIVITY_MODE = "0" *) (* C_DEBUG = "1" *) 
-(* C_FAMILY = "artix7" *) (* C_M_AXI_ADDR_WIDTH = "96'b000000000000000000000000000011000000000000000000000000000000110000000000000000000000000000001100" *) (* C_M_AXI_BASE_ADDR = "192'b000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* C_FAMILY = "artix7" *) (* C_M_AXI_ADDR_WIDTH = "96'b000000000000000000000000000011000000000000000000000000000000110000000000000000000000000000001100" *) (* C_M_AXI_BASE_ADDR = "192'b000000000000000000000000000000000000000000000001101000000000000000000000000000000000000000000000000000000000000110010000000000000000000000000000000000000000000000000000000000011000000000000000" *) 
 (* C_M_AXI_READ_CONNECTIVITY = "96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001" *) (* C_M_AXI_READ_ISSUING = "96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001" *) (* C_M_AXI_SECURE = "96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
 (* C_M_AXI_WRITE_CONNECTIVITY = "96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001" *) (* C_M_AXI_WRITE_ISSUING = "96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001" *) (* C_NUM_ADDR_RANGES = "1" *) 
 (* C_NUM_MASTER_SLOTS = "3" *) (* C_NUM_SLAVE_SLOTS = "1" *) (* C_R_REGISTER = "1" *) 
 (* C_S_AXI_ARB_PRIORITY = "0" *) (* C_S_AXI_BASE_ID = "0" *) (* C_S_AXI_READ_ACCEPTANCE = "1" *) 
 (* C_S_AXI_SINGLE_THREAD = "1" *) (* C_S_AXI_THREAD_ID_WIDTH = "0" *) (* C_S_AXI_WRITE_ACCEPTANCE = "1" *) 
-(* DowngradeIPIdentifiedWarnings = "yes" *) (* P_ADDR_DECODE = "1" *) (* P_AXI3 = "1" *) 
-(* P_AXI4 = "0" *) (* P_AXILITE = "2" *) (* P_AXILITE_SIZE = "3'b010" *) 
-(* P_FAMILY = "artix7" *) (* P_INCR = "2'b01" *) (* P_LEN = "8" *) 
-(* P_LOCK = "1" *) (* P_M_AXI_ERR_MODE = "96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* P_M_AXI_SUPPORTS_READ = "3'b111" *) 
-(* P_M_AXI_SUPPORTS_WRITE = "3'b111" *) (* P_ONES = "65'b11111111111111111111111111111111111111111111111111111111111111111" *) (* P_RANGE_CHECK = "1" *) 
-(* P_S_AXI_BASE_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_HIGH_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_SUPPORTS_READ = "1'b1" *) 
-(* P_S_AXI_SUPPORTS_WRITE = "1'b1" *) 
+(* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "axi_crossbar_v2_1_37_axi_crossbar" *) (* P_ADDR_DECODE = "1" *) 
+(* P_AXI3 = "1" *) (* P_AXI4 = "0" *) (* P_AXILITE = "2" *) 
+(* P_AXILITE_SIZE = "3'b010" *) (* P_FAMILY = "artix7" *) (* P_INCR = "2'b01" *) 
+(* P_LEN = "8" *) (* P_LOCK = "1" *) (* P_M_AXI_ERR_MODE = "96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* P_M_AXI_SUPPORTS_READ = "3'b111" *) (* P_M_AXI_SUPPORTS_WRITE = "3'b111" *) (* P_ONES = "65'b11111111111111111111111111111111111111111111111111111111111111111" *) 
+(* P_RANGE_CHECK = "1" *) (* P_S_AXI_BASE_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_HIGH_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) 
+(* P_S_AXI_SUPPORTS_READ = "1'b1" *) (* P_S_AXI_SUPPORTS_WRITE = "1'b1" *) 
 module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_37_axi_crossbar
    (aclk,
     aresetn,
@@ -1950,6 +1951,7 @@ module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_37_axi_c
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_37_crossbar_sasd" *) 
 module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_37_crossbar_sasd
    (Q,
     \m_payload_i_reg[34] ,
@@ -2277,6 +2279,7 @@ module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_37_cross
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_37_decerr_slave" *) 
 module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_37_decerr_slave
    (mi_bvalid,
     mi_wready,
@@ -2454,6 +2457,7 @@ module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_37_decer
         .O(m_axi_wready_0_sn_1));
 endmodule
 
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_37_splitter" *) 
 module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_37_splitter
    (\m_ready_d_reg[1]_0 ,
     m_ready_d,
@@ -2624,6 +2628,7 @@ module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_37_split
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_register_slice_v2_1_35_axic_register_slice" *) 
 module Top_axi_interconnect_1_upgraded_ipi_imp_xbar_0_axi_register_slice_v2_1_35_axic_register_slice
    (sr_rvalid,
     aa_rready,

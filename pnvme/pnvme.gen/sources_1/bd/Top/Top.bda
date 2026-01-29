@@ -191,18 +191,18 @@
             "V3": {
                 "VT": "AC",
                 "BA": "0x00000000",
-                "HA": "0x00000FFF",
+                "HA": "0x0000FFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "M_AXI_LITE",
                 "MX": "/xdma_0",
                 "MI": "M_AXI_LITE",
-                "MS": "SEG_axi_gpio_0_Reg",
+                "MS": "SEG_NVMeBar_0_Reg",
                 "MV": "xilinx.com:ip:xdma:4.2",
-                "SX": "/GPIO_regs/axi_gpio_0",
+                "SX": "/NVMeBar_0",
                 "SI": "S_AXI",
                 "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_gpio:2.0",
+                "SV": "xilinx.com:user:NVMeBar:1.0",
                 "TM": "both",
                 "TU": "register"
             },
@@ -227,8 +227,44 @@
             },
             "V5": {
                 "VT": "AC",
-                "BA": "0x00001000",
-                "HA": "0x00001FFF",
+                "BA": "0x00010000",
+                "HA": "0x00010FFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "M_AXI_LITE",
+                "MX": "/xdma_0",
+                "MI": "M_AXI_LITE",
+                "MS": "SEG_axi_quad_spi_0_Reg",
+                "MV": "xilinx.com:ip:xdma:4.2",
+                "SX": "/axi_quad_spi_0",
+                "SI": "AXI_LITE",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:axi_quad_spi:3.2",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V6": {
+                "VT": "AC",
+                "BA": "0x00018000",
+                "HA": "0x00018FFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "M_AXI_LITE",
+                "MX": "/xdma_0",
+                "MI": "M_AXI_LITE",
+                "MS": "SEG_axi_gpio_0_Reg",
+                "MV": "xilinx.com:ip:xdma:4.2",
+                "SX": "/GPIO_regs/axi_gpio_0",
+                "SI": "S_AXI",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:axi_gpio:2.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V7": {
+                "VT": "AC",
+                "BA": "0x00019000",
+                "HA": "0x00019FFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "M_AXI_LITE",
@@ -243,10 +279,10 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V6": {
+            "V8": {
                 "VT": "AC",
-                "BA": "0x00002000",
-                "HA": "0x00002FFF",
+                "BA": "0x0001A000",
+                "HA": "0x0001AFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "M_AXI_LITE",
@@ -261,10 +297,10 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V7": {
+            "V9": {
                 "VT": "AC",
-                "BA": "0x00003000",
-                "HA": "0x00003FFF",
+                "BA": "0x0001C000",
+                "HA": "0x0001CFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "M_AXI_LITE",
@@ -276,24 +312,6 @@
                 "SI": "s_axi_lite",
                 "SS": "Reg",
                 "SV": "xilinx.com:ip:xadc_wiz:3.3",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V8": {
-                "VT": "AC",
-                "BA": "0x00010000",
-                "HA": "0x00010FFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "M_AXI_LITE",
-                "MX": "/xdma_0",
-                "MI": "M_AXI_LITE",
-                "MS": "SEG_axi_quad_spi_0_Reg",
-                "MV": "xilinx.com:ip:xdma:4.2",
-                "SX": "/axi_quad_spi_0",
-                "SI": "AXI_LITE",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_quad_spi:3.2",
                 "TM": "both",
                 "TU": "register"
             }
@@ -334,6 +352,11 @@
             },
             {
                 "src": "V8",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V9",
                 "trg": "V2",
                 "EH": "2"
             }

@@ -111,7 +111,6 @@ set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pn
 set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xdma_0_0/Top_xdma_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xdma_0_0/source/Top_xdma_0_0_pcie3_7vx_ip.xdc]
 set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_xdma_0_0/synth/Top_xdma_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_0_imp_s00_mmu_0/Top_axi_interconnect_0_imp_s00_mmu_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_1_imp_auto_cc_0/Top_axi_interconnect_1_imp_auto_cc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_1_imp_auto_cc_0/Top_axi_interconnect_1_imp_auto_cc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/fpga/pnvme/pnvme/pnvme.gen/sources_1/bd/Top/ip/Top_axi_interconnect_1_imp_auto_cc_0/Top_axi_interconnect_1_imp_auto_cc_0_ooc.xdc]

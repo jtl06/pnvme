@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-//Date        : Fri Jan  9 20:26:27 2026
+//Date        : Thu Jan 29 02:24:58 2026
 //Host        : Arcueid running 64-bit major release  (build 9200)
 //Command     : generate_target Top.bd
 //Design      : Top
@@ -302,7 +302,7 @@ module GPIO_regs_imp_1Q7WBHV
         .Dout(xlslice_0_Dout));
 endmodule
 
-(* CORE_GENERATION_INFO = "Top,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Top,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=42,numReposBlks=28,numNonXlnxBlks=0,numHierBlks=14,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "Top.hwdef" *) 
+(* CORE_GENERATION_INFO = "Top,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Top,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=41,numReposBlks=27,numNonXlnxBlks=0,numHierBlks=14,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "Top.hwdef" *) 
 module Top
    (DDR3_addr,
     DDR3_ba,
@@ -1366,25 +1366,6 @@ module Top_axi_interconnect_0_0
   wire [0:0]s00_couplers_to_xbar_WREADY;
   wire [3:0]s00_couplers_to_xbar_WSTRB;
   wire s00_couplers_to_xbar_WVALID;
-  wire [31:0]s00_mmu_M_AXI_ARADDR;
-  wire [2:0]s00_mmu_M_AXI_ARPROT;
-  wire s00_mmu_M_AXI_ARREADY;
-  wire s00_mmu_M_AXI_ARVALID;
-  wire [31:0]s00_mmu_M_AXI_AWADDR;
-  wire [2:0]s00_mmu_M_AXI_AWPROT;
-  wire s00_mmu_M_AXI_AWREADY;
-  wire s00_mmu_M_AXI_AWVALID;
-  wire s00_mmu_M_AXI_BREADY;
-  wire [1:0]s00_mmu_M_AXI_BRESP;
-  wire s00_mmu_M_AXI_BVALID;
-  wire [31:0]s00_mmu_M_AXI_RDATA;
-  wire s00_mmu_M_AXI_RREADY;
-  wire [1:0]s00_mmu_M_AXI_RRESP;
-  wire s00_mmu_M_AXI_RVALID;
-  wire [31:0]s00_mmu_M_AXI_WDATA;
-  wire s00_mmu_M_AXI_WREADY;
-  wire [3:0]s00_mmu_M_AXI_WSTRB;
-  wire s00_mmu_M_AXI_WVALID;
   wire [31:0]xbar_to_m00_couplers_ARADDR;
   wire [2:0]xbar_to_m00_couplers_ARPROT;
   wire [0:0]xbar_to_m00_couplers_ARREADY;
@@ -1640,66 +1621,25 @@ module Top_axi_interconnect_0_0
         .M_AXI_wvalid(s00_couplers_to_xbar_WVALID),
         .S_ACLK(ACLK),
         .S_ARESETN(ARESETN),
-        .S_AXI_araddr(s00_mmu_M_AXI_ARADDR),
-        .S_AXI_arprot(s00_mmu_M_AXI_ARPROT),
-        .S_AXI_arready(s00_mmu_M_AXI_ARREADY),
-        .S_AXI_arvalid(s00_mmu_M_AXI_ARVALID),
-        .S_AXI_awaddr(s00_mmu_M_AXI_AWADDR),
-        .S_AXI_awprot(s00_mmu_M_AXI_AWPROT),
-        .S_AXI_awready(s00_mmu_M_AXI_AWREADY),
-        .S_AXI_awvalid(s00_mmu_M_AXI_AWVALID),
-        .S_AXI_bready(s00_mmu_M_AXI_BREADY),
-        .S_AXI_bresp(s00_mmu_M_AXI_BRESP),
-        .S_AXI_bvalid(s00_mmu_M_AXI_BVALID),
-        .S_AXI_rdata(s00_mmu_M_AXI_RDATA),
-        .S_AXI_rready(s00_mmu_M_AXI_RREADY),
-        .S_AXI_rresp(s00_mmu_M_AXI_RRESP),
-        .S_AXI_rvalid(s00_mmu_M_AXI_RVALID),
-        .S_AXI_wdata(s00_mmu_M_AXI_WDATA),
-        .S_AXI_wready(s00_mmu_M_AXI_WREADY),
-        .S_AXI_wstrb(s00_mmu_M_AXI_WSTRB),
-        .S_AXI_wvalid(s00_mmu_M_AXI_WVALID));
-  Top_axi_interconnect_0_imp_s00_mmu_0 s00_mmu
-       (.aclk(ACLK),
-        .aresetn(ARESETN),
-        .m_axi_araddr(s00_mmu_M_AXI_ARADDR),
-        .m_axi_arprot(s00_mmu_M_AXI_ARPROT),
-        .m_axi_arready(s00_mmu_M_AXI_ARREADY),
-        .m_axi_arvalid(s00_mmu_M_AXI_ARVALID),
-        .m_axi_awaddr(s00_mmu_M_AXI_AWADDR),
-        .m_axi_awprot(s00_mmu_M_AXI_AWPROT),
-        .m_axi_awready(s00_mmu_M_AXI_AWREADY),
-        .m_axi_awvalid(s00_mmu_M_AXI_AWVALID),
-        .m_axi_bready(s00_mmu_M_AXI_BREADY),
-        .m_axi_bresp(s00_mmu_M_AXI_BRESP),
-        .m_axi_bvalid(s00_mmu_M_AXI_BVALID),
-        .m_axi_rdata(s00_mmu_M_AXI_RDATA),
-        .m_axi_rready(s00_mmu_M_AXI_RREADY),
-        .m_axi_rresp(s00_mmu_M_AXI_RRESP),
-        .m_axi_rvalid(s00_mmu_M_AXI_RVALID),
-        .m_axi_wdata(s00_mmu_M_AXI_WDATA),
-        .m_axi_wready(s00_mmu_M_AXI_WREADY),
-        .m_axi_wstrb(s00_mmu_M_AXI_WSTRB),
-        .m_axi_wvalid(s00_mmu_M_AXI_WVALID),
-        .s_axi_araddr(S00_AXI_araddr),
-        .s_axi_arprot(S00_AXI_arprot),
-        .s_axi_arready(S00_AXI_arready),
-        .s_axi_arvalid(S00_AXI_arvalid),
-        .s_axi_awaddr(S00_AXI_awaddr),
-        .s_axi_awprot(S00_AXI_awprot),
-        .s_axi_awready(S00_AXI_awready),
-        .s_axi_awvalid(S00_AXI_awvalid),
-        .s_axi_bready(S00_AXI_bready),
-        .s_axi_bresp(S00_AXI_bresp),
-        .s_axi_bvalid(S00_AXI_bvalid),
-        .s_axi_rdata(S00_AXI_rdata),
-        .s_axi_rready(S00_AXI_rready),
-        .s_axi_rresp(S00_AXI_rresp),
-        .s_axi_rvalid(S00_AXI_rvalid),
-        .s_axi_wdata(S00_AXI_wdata),
-        .s_axi_wready(S00_AXI_wready),
-        .s_axi_wstrb(S00_AXI_wstrb),
-        .s_axi_wvalid(S00_AXI_wvalid));
+        .S_AXI_araddr(S00_AXI_araddr),
+        .S_AXI_arprot(S00_AXI_arprot),
+        .S_AXI_arready(S00_AXI_arready),
+        .S_AXI_arvalid(S00_AXI_arvalid),
+        .S_AXI_awaddr(S00_AXI_awaddr),
+        .S_AXI_awprot(S00_AXI_awprot),
+        .S_AXI_awready(S00_AXI_awready),
+        .S_AXI_awvalid(S00_AXI_awvalid),
+        .S_AXI_bready(S00_AXI_bready),
+        .S_AXI_bresp(S00_AXI_bresp),
+        .S_AXI_bvalid(S00_AXI_bvalid),
+        .S_AXI_rdata(S00_AXI_rdata),
+        .S_AXI_rready(S00_AXI_rready),
+        .S_AXI_rresp(S00_AXI_rresp),
+        .S_AXI_rvalid(S00_AXI_rvalid),
+        .S_AXI_wdata(S00_AXI_wdata),
+        .S_AXI_wready(S00_AXI_wready),
+        .S_AXI_wstrb(S00_AXI_wstrb),
+        .S_AXI_wvalid(S00_AXI_wvalid));
   Top_axi_interconnect_0_upgraded_ipi_imp_xbar_0 xbar
        (.aclk(ACLK),
         .aresetn(ARESETN),

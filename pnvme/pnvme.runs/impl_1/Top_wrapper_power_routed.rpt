@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date             : Fri Jan  9 20:43:49 2026
+| Date             : Thu Jan 29 02:31:42 2026
 | Host             : Arcueid running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_wrapper_power_routed.rpt -pb Top_wrapper_power_summary_routed.pb -rpx Top_wrapper_power_routed.rpx
 | Design           : Top_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.076        |
+| Total On-Chip Power (W)  | 2.075        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.963        |
+| Dynamic (W)              | 1.962        |
 | Device Static (W)        | 0.113        |
 | Effective TJA (C/W)      | 2.7          |
 | Max Ambient (C)          | 94.4         |
@@ -52,29 +52,29 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.151 |       32 |       --- |             --- |
-| Slice Logic              |     0.076 |    57026 |       --- |             --- |
-|   LUT as Logic           |     0.063 |    19596 |     63400 |           30.91 |
+| Clocks                   |     0.150 |       32 |       --- |             --- |
+| Slice Logic              |     0.076 |    57317 |       --- |             --- |
+|   LUT as Logic           |     0.062 |    19704 |     63400 |           31.08 |
 |   LUT as Distributed RAM |     0.006 |     2373 |     19000 |           12.49 |
-|   Register               |     0.005 |    25670 |    126800 |           20.24 |
-|   CARRY4                 |     0.002 |      679 |     15850 |            4.28 |
+|   Register               |     0.005 |    25898 |    126800 |           20.42 |
+|   CARRY4                 |     0.002 |      683 |     15850 |            4.31 |
 |   F7/F8 Muxes            |    <0.001 |      255 |     63400 |            0.40 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   LUT as Shift Register  |    <0.001 |      171 |     19000 |            0.90 |
-|   Others                 |     0.000 |      718 |       --- |             --- |
+|   Others                 |     0.000 |      710 |       --- |             --- |
 |   BUFR                   |     0.000 |        1 |       120 |            0.83 |
-| Signals                  |     0.105 |    43381 |       --- |             --- |
+| Signals                  |     0.105 |    43685 |       --- |             --- |
 | Block RAM                |     0.096 |     29.5 |       135 |           21.85 |
 | MMCM                     |     0.203 |        2 |         6 |           33.33 |
 | PLL                      |     0.092 |        1 |         6 |           16.67 |
-| I/O                      |     0.303 |       63 |       285 |           22.11 |
+| I/O                      |     0.302 |       63 |       285 |           22.11 |
 | GTP                      |     0.672 |        4 |       --- |             --- |
 | PHASER                   |     0.205 |       18 |       --- |             --- |
 | XADC                     |     0.002 |        1 |       --- |             --- |
 | Hard IPs                 |     0.058 |        1 |       --- |             --- |
 |   PCIE                   |     0.058 |        1 |         1 |          100.00 |
 | Static Power             |     0.113 |          |           |                 |
-| Total                    |     2.076 |          |           |                 |
+| Total                    |     2.075 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -84,7 +84,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.642 |       0.623 |      0.019 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.641 |       0.622 |      0.019 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.327 |       0.309 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -182,17 +182,18 @@ Table of Contents
 +---------------------------------+-----------+
 | Name                            | Power (W) |
 +---------------------------------+-----------+
-| Top_wrapper                     |     1.963 |
-|   Top_i                         |     1.961 |
+| Top_wrapper                     |     1.962 |
+|   Top_i                         |     1.960 |
 |     CodeBlinker_3               |     0.002 |
 |       inst                      |     0.002 |
-|     GPIO_regs                   |     0.011 |
+|     GPIO_regs                   |     0.010 |
 |       axi_gpio_0                |     0.003 |
 |       axi_gpio_1                |     0.003 |
 |       axi_gpio_2                |     0.002 |
-|       axi_interconnect_1        |     0.002 |
-|       user_efuse_0              |     0.001 |
-|     axi_interconnect_0          |     0.003 |
+|       user_efuse_0              |     0.002 |
+|     NVMeBar_0                   |     0.002 |
+|       inst                      |     0.002 |
+|     axi_interconnect_0          |     0.002 |
 |       xbar                      |     0.002 |
 |     axi_interconnect_1          |     0.015 |
 |       s00_couplers              |     0.015 |
@@ -202,8 +203,8 @@ Table of Contents
 |       u_Top_mig_7series_0_0_mig |     0.748 |
 |     xadc_wiz_0                  |     0.005 |
 |       inst                      |     0.005 |
-|     xdma_0                      |     1.165 |
-|       inst                      |     1.165 |
+|     xdma_0                      |     1.164 |
+|       inst                      |     1.164 |
 +---------------------------------+-----------+
 
 
